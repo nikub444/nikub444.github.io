@@ -1,4 +1,6 @@
-h1 {
-  text-align: center;
-  color: green;
+.primary {
+  position: absolute;
+  width: auto;
+  height: 50px;
+  background-color: black;
 }
