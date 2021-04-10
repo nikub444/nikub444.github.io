@@ -4,11 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="styles.css"> 
-    <link rel="stylesheet" href="stylesRestults.css"> 
+    <link rel="stylesheet" href="stylesRestults.css">
     <title>Techniki Internetowe</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+
 </head>
-<body class="results">
+<body >
+
     <section>
+    <div id="app">
         <nav>
             <ul class="ul1" >
                 <li style="margin-top: 15px;"><button class="button" style="color: white; margin-top: 16px;">Zaloguj się</button></li>
@@ -17,18 +22,19 @@
                 <li class="li nav2"><a>Gmail</a></li>
                 <li class="li2 nav3"><img src="google.png"  width="92" style="margin-top: 10px; margin-left: 10px; margin-right: 50px;"/></li>
                 <li class="li2 nav3"><div class="input">
-                    <input type="text" maxlength="2048" name="fname" style="margin-left: 10px;">
+                    <input type="text" maxlength="2048" name="fname" style="margin-left: 10px;" v-model="inputHandler">
                     <span><img src="keyboard.png" height="24" /></span>
                     <span><img src="microphone.png" height="24" style="margin-left: 15px;"/></span>
                     <span ><img src="look.png" height="24" style="margin-left: 5px;"/></span>
                 </div></li>
             </ul>
         </nav>
+    
         <div class="content">
             <p><img src="google.png"  width="272"/></p>
             <div class="input">
                 <span ><img src="look.png" height="24"/></span>
-                <input type="text" maxlength="2048" name="fname">
+                <input type="text" maxlength="2048" name="fname" v-model="inputHandler">
                 <span><img src="keyboard.png" height="24" /></span>
                 <span><img src="microphone.png" height="24" style="margin-left: 15px;"/></span>
             </div>
@@ -39,6 +45,7 @@
             <p style="min-width: 329px; line-height: 28px; font-size: small;">Korzystaj z Google w tych językach: <a style="color:#1a0dab;">English</a>
             </p>
         </div>
+    </div>
     </section>
 
     <!--results-->
@@ -188,8 +195,23 @@
                 <li><a>Ustawienia</a></li>
             </ul>
         </div>
+        <div class="footer3">
+            <div class="location">
+                <a class="items">Polska</a>
+                <a class="items"><b>Krowodrza, Kraków</b></a>
+                <a class="items">- Z twojego adresu internetowego</a>
+                <aa href="" class="items"> - Użyj dokładnej lokalizacji</aa>
+                <aa href="" class="items"> - Dowiedz się więcej</aa>
+            </div>
+            <div class="last">
+                <aa href="" class="items">Pomoc</aa>
+                <aa href="" class="items">Prześlij opinię</aa>
+                <aa href="" class="items">Prywatność</aa>
+                <aa href="" class="items">Warunki</aa>
+            </div>
+        </div>
     </footer>
-    
 
 </body>
+<script src="app.js"></script>
 </html>

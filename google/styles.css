@@ -177,3 +177,18 @@ button:hover {
 .button:hover {
   opacity: 0.8;
 }
+
+.options, .results_area{
+  display: none !important;
+}
+
+.options{
+  display: none !important;
+}
+.nav3, .footer3{
+  display: none !important;
+}
+
+.nav1, .nav2 {
+  margin-top: 42px;
+}

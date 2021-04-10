@@ -1,6 +1,36 @@
-.results .nav1, .nav2, .content, .foot
+.results > section > div > .content
+{
+    display: none !important;
+}
+.results > section > div > nav > ul> .nav1
+{
+    display: none !important;
+}
+.results > section > div > nav > ul> .nav2
+{
+    display: none !important;
+}
+.results > section > div > nav > ul> .nav3
+{
+    display: block !important;
+}
+.results > .foot> .footer1
 {
     display: none;
+}
+.results > .foot> .footer2
+{
+    display: none;
+}
+.results > .foot> .footer3
+{
+    display: block !important;
+}
+.results > .options{
+    display: block !important;
+  }
+.results >.results_area{
+    display: block !important;
 }
 .ul1 > .li2 {
     float: left;
