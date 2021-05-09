@@ -454,7 +454,7 @@ body .clean-link:hover{
     display: none;
     line-height: 1.5rem;
     border-top: 1px solid #dfe1e5;
-    background-color: #fff;
+   /* background-color: #fff; */
     z-index:10;
     margin-bottom:18px;
     border-bottom-left-radius: 25%;
@@ -489,4 +489,8 @@ body .clean-link:hover{
 }
 .normal{
     font-weight: 500;
+}
+
+.liFocused{
+    background-color: #cbcdd1;
 }
