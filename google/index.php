@@ -10,9 +10,9 @@
     <link rel="shortcut icon" href="title_logo.svg" />
 
     <script type="text/javascript" src="vue.js"></script>
-    <script src="cities.js"></script>
+
     <script src="autocompleter.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js" integrity="sha512-JZSo0h5TONFYmyLMqp8k4oPhuo6yNk9mHM+FY50aBjpypfofqtEWsAgRDQm94ImLCzSaHeqNvYuD9382CEn2zw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     <title>Google</title>
 
@@ -31,7 +31,7 @@
                 <div class="top_stripe">
                 <section class="m-flex-item ">
                         
-                           <v-autocompleter id="cityNTop" ref="top" :options="cities"></v-autocompleter>
+                           <v-autocompleter id="cityNTop" ref="top" ></v-autocompleter>
                 </section>
                 </div>
                 <section class="h-flex-item app">
@@ -67,7 +67,7 @@
                 <form class="search" action="/search">
                     <section class="m-flex-item  from_main" >
                         
-                            <v-autocompleter id="cityNTop" v-bind:options="cities" ref="bottom" @enter='showResults'></v-autocompleter>
+                            <v-autocompleter id="cityNTop"  ref="bottom" @enter='showResults'></v-autocompleter>
                     </section>
                     
                 </form>
@@ -454,10 +454,7 @@
     <script>
         var app = new Vue({
                 el: '#app',
-                data:{
-                    cities: window.cities,
-                    
-                },
+                
                 updated() {
                     app.$nextTick(() => {
 
@@ -497,10 +494,9 @@
                         }
                         app.$refs.top.change=true
                         return this.change
-                    }
-                    //actualSearch: this.googleSearch
+                    },
                 }
-                });
+        });
             
     </script>
 </body>
